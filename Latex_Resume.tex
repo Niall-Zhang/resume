@@ -1,0 +1,175 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,10pt]{article} % 改為10pt
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins (可根據需要進一步微調)
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4pt}
+
+% Sections formatting: 減少一些垂直間距
+\titleformat{\section}{
+  \vspace{-3pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{#2 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]} % 調整左邊距
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\huge NIALL ZHANG}} & Email: \href{mailto:niall.zhang.hc@gmail.com}{niall.zhang.hc@gmail.com} \\
+  \href{https://www.linkedin.com/in/niall-z/}{http://linkedin.com/in/niall-z} & Mobile: \href{tel:+1(672)515-2141}{+1(672)515-2141} \\
+  \href{https://github.com/Niall-Zhang}{https://github.com/Niall-Zhang} & Vancouver, BC\\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {New York Institute of Technology}{Vancouver, BC}
+      {Master of Science in Cybersecurity}{Jan 2023 - Oct 2024}
+    \resumeSubheading
+      {University of British Columbia}{Vancouver, BC}
+      {Bachelor of Science in Physics}{Sep 2018 - May 2022}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Arspace Technology Ltd. (Start-up)}{Vancouver, BC}
+      {Software Engineer (Part-Time)}{Jan 2024 - Aug 2024}
+      \resumeItemListStart
+        \resumeItem{}
+          {Built and launched a cross-platform mobile application enabling users to purchase event tickets and match with potential dates, deployed on both the Apple App Store and Google Play.}
+        \resumeItem{}
+          {Designed and implemented a backend using \textbf{Python} \textbf{Django} featuring authentication, user registration, and an admin dashboard. Integrated RESTful APIs, OAuth, and Stripe to enable rapid development and scalability; designed the relational schema and deployed the \textbf{PostgreSQL} database on \textbf{GCP Compute Engine}.}
+        \resumeItem{}
+          {Utilized \textbf{Flutter} to develop a mobile frontend with a consistent UI across iOS and Android, delivering an optimal user experience.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {New York Institute of Technology}{Vancouver, BC}
+      {Teaching Assistant}{May 2024 - Jul 2024}
+      \resumeItemListStart
+        \resumeItem{}
+          {Assisted a professor in delivering the \textbf{Embedded System Security} course, supporting 28 students in deepening their understanding through both academic theory and industry experience.}
+        \resumeItem{}
+          {Contributed to designing and grading assignments, conducting lab sessions, and holding office hours and tutorials.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {ezSec Inc.}{Remote, Canada}
+      {Cybersecurity Data Analyst Intern}{Feb 2024 - May 2024}
+      \resumeItemListStart
+        \resumeItem{}
+         {Developed a machine learning-based cybersecurity analysis framework to automatically detect threats using MITRE ATT\&CK techniques and open-source data.}
+        \resumeItem{}
+         {Implemented \textbf{Python} scripts to scrape, clean, and process cybersecurity alerts in Yara, YAML, and HTML formats from authoritative public sources, transforming data into CSV files for analysis.}
+        \resumeItem{}
+         {Designed regex rules for alerts and mapped them to MITRE ATT\&CK techniques, expanding the lookup table by 300\%.}
+        \resumeItem{}
+         {Enhanced an NLP model by integrating Attack Patterns from STIX, boosting accuracy from 40\% to 62\%.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {iFlytek Corp.}{Hefei, China}
+      {Software Engineer Intern}{Apr 2021 - Aug 2021}
+      \resumeItemListStart
+        \resumeItem{}
+          {Contributed to a smart city traffic police project in \textbf{Java} for detecting if cars yielded to pedestrians.}
+        \resumeItem{}
+          {Collaborated with a UI designer to implement \textbf{Vue.js} modules based on Figma designs, enhancing feature reusability and modularity.}
+        \resumeItem{}
+          {Developed an API using \textbf{Java Spring Boot} and an \textbf{OpenCV} model to analyze live camera feeds, improving detection accuracy by 25\%.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\section{Project}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Time Management Web App}{: Developed a time management web application using a full JavaScript stack with React for the front end and Node.js with Express for the RESTful API. Followed SDLC and Agile methodologies, implemented comprehensive QA testing (including API/integration tests through Postman), and managed version control with Git.}
+
+  \resumeSubHeadingListEnd
+%-----------TECHNICAL SKILLS------------
+\section{Technical Skills}
+\small
+\begin{itemize}[leftmargin=*, itemsep=1pt, parsep=0pt]
+  \item \textbf{Languages}: Python, Java, JavaScript
+  \item \textbf{Front End}: Vue.js, React, Flutter, HTML5, CSS3
+  \item \textbf{Back End}: Node.js, Spring Boot, Django
+  \item \textbf{Cloud}: GCP (IAM, Cloud Storage, Compute Engine, APIs \& services)
+  \item \textbf{Database}: SQL Server, MongoDB, SSIS, SSMS, SQL Report Builder
+\end{itemize}
+
+\end{document}
